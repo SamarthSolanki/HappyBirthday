@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap')
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,9 +9,129 @@
 
 body {
   background: #E5E5E5;
-  background-image: url("bg.jpg");
+  background-image: url("img.png");
+  background-repeat: no-repeat;
+  background-size: 1540px 2100px;
+  background-position: 0 -700px;
 }
 
+.mySlides h2{
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.paper {
+  position: relative;
+  height: 550px;
+  width: 450px;
+  background: rgba(255,255,255,0.9);
+  margin: -100px -25px;
+  left: 50%;
+  top: 50%;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+.paper::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255,0,0,0.4);
+}
+.lines {
+  margin-top: 40px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+}
+.text {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  font-family: 'Indie Flower';
+  overflow: hidden;
+  outline: none;
+}
+.holes {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: lightgoldenrodyellow;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 0px #888;
+}
+.hole-top {
+  top: 10%;
+}
+.hole-middle {
+  top: 50%;
+}
+.hole-bottom {
+  bottom: 10%;
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+  text-align: right;
+}
+
+.left{
+	display:block;
+    	float:center;
+}
+
+.divpoem{
+text-align: center;
+}
+.poem{
+color: #000;
+position: relative;
+    font-family: "Source Sans Pro";
+      font-size: 2em;
+      font-weight: 900;
+      text-align: center;
+}
+
+div.container{
+    text-align: center;
+
+}
+
+
+button.btn {
+  transition-duration: 0.4s;
+}
+
+button.btn:hover {
+  background-color: orange; /* Green */
+  color: white;
+}
+.lined-paper {
+    /* Lined background */
+    background-color: white;
+    margin: 0px 400px 50px 400px;
+    font-family: 'Space Grotesk'
+    width: 70%;
+    box-shadow: 0px 0px 5px 0px #888;
+    border: 5px solid black;
+    /*
+    Display the content on top of the lines.
+    The line height must be the same as the background size defined above
+    */
+}
 #card-front {
   color: #FFDFDF;
   z-index: 10;
@@ -20,9 +142,10 @@ body {
 }
 
 .wrap {
-  padding: 1.5em 2.5em;
+  padding: 0em 2.5em;
   height: 100%;
 }
+
 
 #card-front, #card-inside {
   width: 50%;
@@ -36,6 +159,9 @@ body {
   background: #FFEFEF;
   -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
           box-shadow: inset 2px 0 1px rgba(0, 0, 0, 0.05);
+}
+#cardcen{
+    margin-top: 50px;
 }
 
 #card {
@@ -62,9 +188,10 @@ body {
   text-align: center;
   font-family: 'Lobster', cursive;
   font-style: italic;
-  font-size: 70px;
+  font-size: 65px;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15), 1px 1px 0 #ffc8c8, 2px 2px 0 #ff9696, 3px 3px 0 #ff7d7d;
   color: #FFF;
+  margin-top: 100px;
 }
 
 #card-inside {
@@ -90,6 +217,62 @@ p.signed {
   font-weight: bold;
   font-size: 0.75em;
 }
+
+.inner {
+  display: inline-block;
+  margin: 10px;
+}
+
+.outer{
+margin: 20px;
+width:100%;
+text-align: center;
+}
+
+.innerm1 {
+  text-align: left;
+    bottom: 8px;
+    float: bottom-left
+}
+
+input[type=submit] {
+border-radius: 8px;
+            background-color: orange;
+            border: none;
+            text-decoration: none;
+            font:
+            color: white;
+            margin: 5px 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            width: 13em;  height: 3em;
+            font-family: "Source Sans Pro";
+              font-size: 20px;
+
+
+         }
+input[type=submit]:hover {
+            background-color: red;
+            border: none;
+            text-decoration: none;
+            color: white;
+            margin: 10px 10px;
+            cursor: pointer;
+            width: 16em;  height: 3em;
+            font-family: "Source Sans Pro";
+              font-size: 22px;
+
+         }
+
+.outerm{
+margin: 10px;
+text-align:bottom
+
+
+}
+
+
+
 
 #card-front {
   background-color: #ee9ca7;

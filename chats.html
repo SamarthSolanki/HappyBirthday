@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Happy Birthday Madiha</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+<link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
+<meta name="theme-color" content="#F26B38">
+</head>
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<div class="outer">
+    <div class="inner">
+        <form method="POST" action="hof.html">
+            <input type="submit" value="Hall of Fame"/>
+        </form>
+    </div>
+    <div class="inner">
+        <form method="POST" action="card.html">
+            <input type="submit" value="Card for My Pheobe"/>
+        </form>
+    </div>
+    <div class="inner">
+        <form method="POST" action="index.html">
+            <input type="submit" value="Home"/>
+        </form>
+    </div>
+    <div class="inner">
+        <form method="POST" action="poem.html">
+            <input type="submit" value="Poem for My Poo"/>
+        </form>
+    </div>
+</div>
+<div class="container">
+
+    <div class="mySlides">
+        <img src="chat/1.jpg" style="width:20%">
+        <img src="chat/2.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/3.jpg" style="width:20%">
+        <img src="chat/4.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/5.jpg" style="width:20%">
+        <img src="chat/6.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/7.jpg" style="width:20%">
+        <img src="chat/8.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/9.jpg" style="width:20%">
+        <img src="chat/10.jpg" style="width:20%">
+    </div>
+    <div class="mySlides">
+        <img src="chat/11.jpg" style="width:20%">
+        <img src="chat/22.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/13.jpg" style="width:20%">
+        <img src="chat/14.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/15.jpg" style="width:20%">
+        <img src="chat/16.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/17.jpg" style="width:20%">
+        <img src="chat/18.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/19.jpg" style="width:20%">
+        <img src="chat/20.jpg" style="width:20%">
+    </div>
+    <div class="mySlides">
+        <img src="chat/21.jpg" style="width:20%">
+        <img src="chat/22.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/23.jpg" style="width:20%">
+        <img src="chat/24.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/25.jpg" style="width:20%">
+        <img src="chat/26.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/27.jpg" style="width:20%">
+        <img src="chat/28.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/29.jpg" style="width:20%">
+        <img src="chat/30.jpg" style="width:20%">
+    </div>
+    <div class="mySlides">
+        <img src="chat/31.jpg" style="width:20%">
+        <img src="chat/32.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/33.jpg" style="width:20%">
+        <img src="chat/34.jpg" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+        <img src="chat/35.jpg" style="width:20%">
+    </div>
+    <button class="w3-button w3-display-left w3-black btn" onclick="plusDivs(-1)">&#10094;</button>&nbsp
+    <button class="w3-button w3-display-right w3-black btn" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<script  src="js/index.js"></script>
+</body>
+</html>
